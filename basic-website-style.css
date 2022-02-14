@@ -1,0 +1,142 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 100%;
+    height: 100%;
+    margin: 0px;
+    display: grid;
+    background: linear-gradient(to bottom, rgb(233, 228, 164), rgb(184, 181, 181));
+    grid-template-rows: [header-start] 270px [header-end main-start] auto [main-end footer-start] 5em [footer-end];
+    grid-template-columns: [left-aside-start] 250px [left-aside-end content-start] 2fr [content-end right-aside-start] 1.3fr [right-aside-end];
+    grid-template-areas: "header header header" "left-aside main right-aside" "footer footer footer";
+}
+
+
+/* * {
+    border: solid 1px rgb(130, 123, 123);
+} */
+
+header {
+    grid-area: header;
+
+}
+
+#left-aside {
+    grid-area: left-aside;
+}
+
+#content {
+    grid-area: main;    
+}
+
+#right-aside {
+    grid-area: right-aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+#heading>ul {
+    list-style-type: none;
+    display: flex;
+    flex: row;
+}
+
+#heading li {
+    padding: 5px;
+}
+
+#logo-note {
+    margin-right: auto;
+}
+
+#title {
+    font-size: 3em;
+}
+
+#subtitle {
+    width: 500px;
+}
+
+#subheading {
+    padding: 50px 35px 25px;
+    border: solid 1px green;
+}
+
+#left-aside>* {
+    padding-left: 40px;
+    list-style-type: none;
+}
+
+#content-main-article>img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    width: 50%;
+    height: 100%;
+}
+
+.subheading {
+    border: solid 1px blue;
+    padding: 10px;
+    margin: 10px 0;
+    width: 95%;
+    clear: left;
+    text-transform: uppercase;
+}
+
+#content-sug {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+}
+
+.content-sug-cd>img {
+    height: 100%;
+    width: 100%;
+}
+
+.content-sug-cd {
+    width: 48%;
+    height: 45%;
+    padding: .4em;
+}
+
+#content-bottom-tab {
+    margin-bottom: 30px;
+}
+
+.profile-card>img {
+    height: 105px;
+    width: 85px;
+    border-radius: 5px;
+}
+
+.project-card>img {
+    float: left;
+    width: 30%;
+    margin-right: 10px;
+    clear: left;
+}
+
+.project-card {
+    margin: 10px;
+}
+
+.doc {
+    width: 6em;
+    height: 6em;
+    margin: .5em;
+    background-color: grey;
+}
+
+.right-nav-docs {
+    display: flex;
+    flex-flow: row wrap;
+    padding: auto;
+}
+
+footer {
+    background-color: grey;
+    text-align: center;
+}
